@@ -35,6 +35,22 @@
 		  }
 		],
 		"status": "available"
+	  },
+
+	  "unavaiable_pet_request" : {
+		"id": 1234,
+		"name": "cat",
+		"category": {
+		  "id": 1,
+		  "name": "Cat"
+		},
+		"tags": [
+		  {
+			"id": 0,
+			"name": "string"
+		  }
+		],
+		"status": "available"
 	  }
 
 }
