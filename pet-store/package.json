@@ -1,0 +1,35 @@
+{
+  "name": "prasad-mudedla",
+  "version": "1.0.0",
+  "description": "Automation Test Suite for PetStore",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "vulnerabilityCheck": "npm audit",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasadmudedla/prasad-mudedla.git"
+  },
+  "author": "Prasad Mudedla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prasadmudedla/prasad-mudedla/issues"
+  },
+  "homepage": "https://github.com/prasadmudedla/prasad-mudedla#readme",
+  "dependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "jest": "^27.4.3",
+    "jest-cli": "^27.4.3",
+    "jest-html-reporter": "^3.4.2",
+    "jest-stare": "^2.3.0",
+    "superagent": "^6.1.0",
+    "superagent-retry": "^0.6.0",
+    "supertest": "^6.1.6"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
