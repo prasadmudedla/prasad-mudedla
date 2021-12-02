@@ -1,7 +1,7 @@
 # Pet Store Automation Test Suite
 
-
-### In API testing we check the following aspects:
+In API testing we check the following aspects:
+----------------------
 - Validation : To ensure correct development against the stated user needs and requirements (like correct environemnt integration and adherence to standards).
 - Functional - To check how the API techincally works. We will cover Testing the schema of request & response, response codes, error handling, edge cases, redirections and consistent results (reliability).
 - Load Testing - To check if the API can handle large amount of calls.

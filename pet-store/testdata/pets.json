@@ -1,0 +1,40 @@
+{
+	"create_pet_request" : {
+		"id": 11,
+		"name": "cat",
+		"category": {
+		  "id": 1,
+		  "name": "Cat"
+		},
+		"photoUrls": [
+		  "string"
+		],
+		"tags": [
+		  {
+			"id": 0,
+			"name": "string"
+		  }
+		],
+		"status": "available"
+	  },
+
+	  "update_pet_request" : {
+		"id": 11,
+		"name": "doggie",
+		"category": {
+		  "id": 1,
+		  "name": "Dogs"
+		},
+		"photoUrls": [
+		  "string"
+		],
+		"tags": [
+		  {
+			"id": 0,
+			"name": "string"
+		  }
+		],
+		"status": "available"
+	  }
+
+}
