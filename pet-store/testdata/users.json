@@ -1,0 +1,47 @@
+{
+	"create_user_request" : {
+		"id": 10,
+		"username": "user10",
+		"firstName": "John",
+		"lastName": "James",
+		"email": "john@email.com",
+		"password": "12345",
+		"phone": "12345",
+		"userStatus": 1
+	  },
+
+	  "create_users_with_list" : [
+		{
+		  "id": 11,
+		  "username": "user11",
+		  "firstName": "Federer",
+		  "lastName": "Roger",
+		  "email": "john@email.com",
+		  "password": "12345",
+		  "phone": "12345",
+		  "userStatus": 1
+		},
+		{
+			"id": 12,
+			"username": "user12",
+			"firstName": "Mark",
+			"lastName": "Boucher",
+			"email": "mark@email.com",
+			"password": "67890",
+			"phone": "67890",
+			"userStatus": 2
+		  }
+	  ],
+
+	  "update_user_request" : {
+		"id": 10,
+		"username": "updated-username",
+		"firstName": "Test",
+		"lastName": "User",
+		"email": "john@email.com",
+		"password": "12345",
+		"phone": "12345",
+		"userStatus": 1
+	  }
+
+}

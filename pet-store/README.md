@@ -30,7 +30,7 @@ Proposed Test cases for Automation:
 
 **User Endpoint**
 - Create a User
-- Create a Wishlist for a user
+- Create Users with list
 - Log the user into the system
 - Log out the current active session
 - Fetch user by given username

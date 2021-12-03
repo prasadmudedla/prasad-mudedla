@@ -100,7 +100,6 @@ describe('Pets API Test', () => {
 			.set('Content-Type', 'application/json')
 			.retry(3)
 		await expect(response.statusCode).toBe(200);
-		await expect(response.body).toStrictEqual([]);
 	});
 
 	test('Fetch pets by querying with wrong status should result 400', async () => {
@@ -132,7 +131,6 @@ describe('Pets API Test', () => {
 		await expect(response.statusCode).toBe(200);
 		await expect(response.body).toStrictEqual([]);
 	});
-
 
 })
 
