@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "vulnerabilityCheck": "npm audit",
-    "lint": "eslint --ignore-path .gitignore ."
+    "lint": "eslint --ignore-path ../.gitignore ."
   },
   "repository": {
     "type": "git",
