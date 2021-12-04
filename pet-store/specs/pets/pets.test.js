@@ -19,6 +19,7 @@ describe('Pets API Test', () => {
 			.send(post_request)
 			.retry(3)
 		await expect(response.statusCode).toBe(200);
+		await expect(response.body).toStrictEqual(post_request);
 	});
 
 	test('Update existing Pet with valid data should result 200', async () => {
@@ -28,6 +29,7 @@ describe('Pets API Test', () => {
 			.send(put_request)
 			.retry(3);
 		await expect(response.statusCode).toBe(200);
+		await expect(response.body).toStrictEqual(put_request);
 	});
 
 	test('Update non-existing Pet should result 404', async () => {
@@ -45,6 +47,7 @@ describe('Pets API Test', () => {
 			.set('Content-Type', 'application/json')
 			.retry(3)
 		await expect(response.statusCode).toBe(200);
+		await expect(response.body).toStrictEqual(put_request);
 	});
 
 	test('Fetch pet with invalid id should result 400', async () => {
@@ -68,7 +71,7 @@ describe('Pets API Test', () => {
 			.post('pet/' + post_request.id)
 			.set('Content-Type', 'application/json')
 			.query({ name: "pet" })
-			.query({ status: "available" })
+			.query({ status: "sold" })
 			.retry(3);
 		await expect(response.statusCode).toBe(200);
 	});
@@ -90,6 +93,7 @@ describe('Pets API Test', () => {
 			.set('Content-Type', 'application/json')
 			.retry(3)
 		await expect(response.statusCode).toBe(200);
+
 	});
 
 	test('Fetch pets by querying with multiple status should result 200 with Empty response', async () => {

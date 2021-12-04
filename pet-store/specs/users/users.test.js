@@ -19,6 +19,7 @@ describe('Users API Test', () => {
 			.send(create_user_request)
 			.retry(3);
 		await expect(response.statusCode).toBe(200);
+		await expect(response.body).toStrictEqual(create_user_request);
 	});
 
 	test('Create users with list should result 200', async () => {
@@ -28,6 +29,7 @@ describe('Users API Test', () => {
 			.send(create_users_with_list)
 			.retry(3);
 		await expect(response.statusCode).toBe(200);
+		await expect(response.body).toStrictEqual(create_users_with_list);
 	});
 
 	test('Fetch user by username should result 200', async () => {
@@ -36,6 +38,7 @@ describe('Users API Test', () => {
 			.type('application/json')
 			.retry(3);
 		await expect(response.statusCode).toBe(200);
+		await expect(response.body).toStrictEqual(create_user_request);
 	});
 
 	test('Fetch user by unavailable username should result 404', async () => {
@@ -53,6 +56,7 @@ describe('Users API Test', () => {
 			.send(update_user_request)
 			.retry(3);
 		await expect(response.statusCode).toBe(200);
+		await expect(response.body).toStrictEqual(update_user_request);
 	});
 
 	test('Delete User should result 200', async () => {

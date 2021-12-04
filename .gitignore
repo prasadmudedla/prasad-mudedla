@@ -104,3 +104,5 @@ dist
 .tern-port
 .DS_Store
 pet-store/Report/index.html
+pet-store/node_modules
+

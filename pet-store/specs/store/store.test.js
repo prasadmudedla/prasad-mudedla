@@ -18,6 +18,8 @@ describe('Store API Test', () => {
 			.send(create_order_request)
 			.retry(3)
 		await expect(response.statusCode).toBe(200);
+		await expect(response.body).toStrictEqual(create_order_request);
+
 	});
 
 	test('Create a Order with missing data should result 200', async () => {
@@ -43,6 +45,7 @@ describe('Store API Test', () => {
 			.get('store/order/' + create_order_request.id)
 			.retry(3)
 		await expect(response.statusCode).toBe(200);
+		await expect(response.body).toStrictEqual(create_order_request);
 	});
 
 	test('Fetch order from store by non-existing id should result 404', async () => {
